@@ -1,3 +1,4 @@
+import Footer from './components/layout/Footer'
 import { useState } from 'react'
 import './App.css'
 
@@ -29,6 +30,7 @@ function App() {
         </p>
         <button className="start-button">Get Started</button>
       </main>
+      <Footer />
     </>
   )
 }
