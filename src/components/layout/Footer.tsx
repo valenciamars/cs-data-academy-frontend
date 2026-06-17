@@ -1,3 +1,4 @@
+
 function Footer() {
   return (
     <footer className="bg-pink-100 border-t border-pink-200 py-6 text-center">
