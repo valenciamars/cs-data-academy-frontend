@@ -104,3 +104,140 @@
     font-size: 18px;
   }
 }
+
+.cta-section {
+  margin-top: 100px;
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f8d7e8;
+  border-radius: 24px;
+}
+
+.cta-section h2 {
+  font-size: 42px;
+  color: #8b2f63;
+}
+
+.cta-section p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #5f4b57;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 32px;
+  background-color: #c0528a;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #9b3f75;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+}
+
+.cta-section p {
+  font-size: 18px;
+}
+
+.lessons-page {
+  min-height: 80vh;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.module-grid,
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.module-card,
+.lesson-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  text-decoration: none;
+  color: #333;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  transition: 0.2s ease;
+}
+
+.module-card:hover,
+.lesson-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.module-card h2,
+.lesson-card h2 {
+  color: #c026d3;
+}
+
+.module-card span,
+.lesson-card p {
+  font-weight: bold;
+}
+
+.lesson-page {
+  min-height: 80vh;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.lesson-hero {
+  background: #fdf2f8;
+  padding: 2.5rem;
+  border-radius: 24px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.lesson-label {
+  color: #be185d;
+  font-weight: bold;
+}
+
+.lesson-hero h1 {
+  color: #831843;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.lesson-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.lesson-section h2 {
+  color: #c026d3;
+}
+
+pre {
+  background: #1f2937;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  overflow-x: auto;
+}
+
+.quiz-list {
+  line-height: 2;
+}
