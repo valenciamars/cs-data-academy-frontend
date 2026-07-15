@@ -402,6 +402,108 @@ pre {
   line-height: 2;
 }
 
+.quiz-options {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.quiz-option-button {
+  border: 1px solid #f3cfe0;
+  background: white;
+  color: #5c4a55;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.quiz-option-button:hover,
+.quiz-option-button:focus-visible {
+  border-color: #c026d3;
+  outline: none;
+}
+
+.quiz-option-button.selected {
+  background: #fdf2f8;
+  border-color: #c026d3;
+}
+
+.quiz-option-button.correct {
+  background: #ecfdf3;
+  border-color: #16a34a;
+  color: #166534;
+}
+
+.quiz-option-button.incorrect {
+  background: #fef2f2;
+  border-color: #ef4444;
+  color: #991b1b;
+}
+
+.quiz-feedback {
+  margin-top: 0.9rem;
+  font-weight: 700;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+}
+
+.quiz-feedback.success {
+  background: #ecfdf3;
+  color: #166534;
+}
+
+.quiz-feedback.error {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.practice-solution-card {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.practice-instructions {
+  margin: 0;
+  color: #5c4a55;
+}
+
+.practice-toggle {
+  justify-self: start;
+  border: none;
+  background: #c026d3;
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.practice-toggle:hover,
+.practice-toggle:focus-visible {
+  background: #9b3f75;
+  outline: none;
+}
+
+.practice-solution-panel {
+  background: #fff7fb;
+  border: 1px solid #f3cfe0;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.practice-language {
+  font-weight: 700;
+  color: #831843;
+  margin-top: 0;
+}
+
+.practice-explanation {
+  color: #5c4a55;
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .lesson-page {
     padding: 2rem 1rem;

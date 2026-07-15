@@ -1,75 +1,96 @@
 import { Link } from 'react-router-dom'
+import QuickCheck from '../../components/lessons/QuickCheck'
+import PracticeSolution from '../../components/lessons/PracticeSolution'
 
 function Lesson1() {
   return (
     <main className="lesson-page">
       <section className="lesson-hero">
         <p className="lesson-label">Module 1 · Lesson 1</p>
-        <h1>Introduction to HTML</h1>
+        <h1>What Is Coding?</h1>
         <p>
-          HTML is the skeleton of every webpage. It helps you arrange text,
-          images, buttons, and links so a browser knows how to display them.
+          Coding is how people give instructions to a computer. These
+          instructions help the computer solve problems, show information,
+          and create apps, websites, and games.
         </p>
       </section>
 
       <section className="lesson-section">
-        <h2>What is HTML?</h2>
+        <h2>Why Do People Code?</h2>
         <p>
-          Think of HTML as the blueprint for a web page. When you write HTML,
-          you are giving the browser clear instructions about what belongs on
-          the page and how each section should be organized.
+          A computer does exactly what it is told. Coding lets us tell it what
+          to do in a clear, step-by-step way. Beginners often start with small
+          commands and build their skills over time.
         </p>
         <ul className="lesson-list">
-          <li>Use headings to create structure</li>
-          <li>Use paragraphs to explain ideas clearly</li>
-          <li>Use links and buttons to guide visitors</li>
+          <li>Code tells a computer what to do</li>
+          <li>Programs can make tasks faster</li>
+          <li>Small steps can build big projects</li>
         </ul>
       </section>
 
       <section className="lesson-section">
-        <h2>HTML Example</h2>
+        <h2>Code Example</h2>
         <p>
-          This small example creates a title, a paragraph, and a button:
+          This tiny example shows a message on the screen using JavaScript:
         </p>
         <pre>
-          <code>{`<h1>Welcome to My Website</h1>
-<p>This is my first webpage.</p>
-<button>Click Me</button>`}</code>
+          <code>{`console.log('Hello, world!')`}</code>
         </pre>
+        <p>
+          The code prints the words Hello, world! to the console. A console is
+          a place where programmers can see messages from their code.
+        </p>
       </section>
 
       <section className="lesson-section">
-        <h2>Knowledge Check</h2>
-        <p>Try answering these three quick questions:</p>
+        <h2>Quick Check</h2>
+        <p>Choose one answer for each question:</p>
 
         <div className="knowledge-check">
-          <div className="quiz-card">
-            <h3>1. What does HTML help you build?</h3>
-            <ul>
-              <li>A. The structure of a webpage</li>
-              <li>B. A spreadsheet</li>
-              <li>C. A video file</li>
-            </ul>
-          </div>
+          <QuickCheck
+            question="1. What is coding?"
+            options={[
+              { label: 'A', text: 'Writing instructions for a computer' },
+              { label: 'B', text: 'Drawing pictures' },
+              { label: 'C', text: 'Making music' },
+            ]}
+            correctAnswer="A"
+            explanation="Coding is giving clear instructions to a computer."
+          />
 
-          <div className="quiz-card">
-            <h3>2. Which tag creates a heading?</h3>
-            <ul>
-              <li>A. &lt;button&gt;</li>
-              <li>B. &lt;h1&gt;</li>
-              <li>C. &lt;img&gt;</li>
-            </ul>
-          </div>
+          <QuickCheck
+            question="2. What does console.log do?"
+            options={[
+              { label: 'A', text: 'Plays a video' },
+              { label: 'B', text: 'Prints a message' },
+              { label: 'C', text: 'Deletes files' },
+            ]}
+            correctAnswer="B"
+            explanation="console.log prints information to the console."
+          />
 
-          <div className="quiz-card">
-            <h3>3. What does a button help users do?</h3>
-            <ul>
-              <li>A. Read a paragraph</li>
-              <li>B. Click and interact</li>
-              <li>C. Play music</li>
-            </ul>
-          </div>
+          <QuickCheck
+            question="3. Why do people use code?"
+            options={[
+              { label: 'A', text: 'To solve problems with computers' },
+              { label: 'B', text: 'To paint walls' },
+              { label: 'C', text: 'To fold laundry' },
+            ]}
+            correctAnswer="A"
+            explanation="Code helps people build solutions for computers and other technology."
+          />
         </div>
+      </section>
+
+      <section className="lesson-section">
+        <h2>Practice</h2>
+        <PracticeSolution
+          instructions="Try writing your own message in the console. Change the text inside the quotes and see what happens."
+          solutionCode={`console.log('Hello, world!')`}
+          languageLabel="JavaScript"
+          explanation="This prints a message to the console so you can see your first line of code working."
+        />
       </section>
 
       <section className="lesson-nav">

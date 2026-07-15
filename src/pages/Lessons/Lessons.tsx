@@ -4,12 +4,18 @@ import { Link } from 'react-router-dom'
 const modules = [
   {
     id: 'module-1',
-    title: 'Module 1: Web Development Basics',
-    description: 'HTML, CSS, JavaScript, and beginner coding concepts.',
+    title: 'Module 1: Coding Basics',
+    description: 'Beginner-friendly lessons on coding fundamentals.',
     lessons: [
-      { id: 1, title: 'Lesson 1: Introduction to HTML', path: '/lessons/1' },
-      { id: 2, title: 'Lesson 2: HTML Elements', path: '/lessons/2' },
-      { id: 3, title: 'Lesson 3: HTML Forms', path: '/lessons/3' },
+      { id: 1, title: 'Lesson 1: What Is Coding?', path: '/lessons/1' },
+      { id: 2, title: 'Lesson 2: Variables', path: '/lessons/2' },
+      { id: 3, title: 'Lesson 3: Data Types', path: '/lessons/3' },
+      { id: 4, title: 'Lesson 4: Operators', path: '/lessons/4' },
+      { id: 5, title: 'Lesson 5: Conditionals', path: '/lessons/5' },
+      { id: 6, title: 'Lesson 6: Loops', path: '/lessons/6' },
+      { id: 7, title: 'Lesson 7: Functions', path: '/lessons/7' },
+      { id: 8, title: 'Lesson 8: Arrays', path: '/lessons/8' },
+      { id: 9, title: 'Lesson 9: Mini Practice Project', path: '/lessons/9' },
     ],
   },
 ]
